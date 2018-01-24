@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab1</string>
+    <string name="app_name">प्रयोगशाला-२</string>
     <string name="hello_message">नमस्ते </string>
     <string name="ButtonText">मैं एक बटन हूँ</string>
+
+    <string name="login">लॉग इन</string>
+    <string name="loginname">लॉगिन नाम</string>
+    <string name="pass">पारण शब्द</string>
+    <string name="password">पारण शब्द</string>
+
 </resources>
