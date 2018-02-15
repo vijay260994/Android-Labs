@@ -9,4 +9,10 @@
     <string name="pass">पारण शब्द</string>
     <string name="password">पारण शब्द</string>
 
+    <string name="dialog_title">नमस्ते</string>
+    <string name="dialog_message">क्या बाहर जाना चाहते हो?</string>
+    <string name ="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="response">यहाँ मेरी प्रतिक्रिया है</string>
+
 </resources>
