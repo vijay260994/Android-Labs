@@ -15,4 +15,6 @@
     <string name="no">नहीं</string>
     <string name="response">यहाँ मेरी प्रतिक्रिया है</string>
 
-</resources>
+    <string name="start_chat">बातचीत शुरू कीजिए</string>
+    <string name="send_text">भेजना</string>
+    </resources>

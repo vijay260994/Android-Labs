@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab2</string>
+    <string name="app_name">Lab 6</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\’m a button</string>
 
@@ -10,8 +10,10 @@
 
     <string name="dialog_title">Hello</string>
     <string name="dialog_message">Do you want to exit?</string>
-    <string name ="yes">Yes</string>
+    <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="response">Here is my Response</string>
 
+    <string name="start_chat">Start Chat</string>
+    <string name="send_text">Send</string>
 </resources>
