@@ -29,47 +29,65 @@ public class StartActivity extends Activity
         });
 
         Button chatbutton = (Button) findViewById(R.id.btnSend);
-        chatbutton.setOnClickListener(new View.OnClickListener() {
+        chatbutton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StartActivity.this,ChatWindow.class);
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
 //                startActivity(intent);
+                startActivityForResult(intent, 50);
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+            }
+
+        });
+
+
+        Button weatherbutton = findViewById(R.id.btnweather);
+        weatherbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(StartActivity.this,WeatherForecast.class);
                 startActivityForResult(intent,50);
-               Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+                Log.i(ACTIVITY_NAME, "User clicked Weather Forcast ");
             }
         });
     }
-    protected void onActivityResult(int requestCode, int responseCode)
-    {
-        if(requestCode == 50)
-        {
-            Log.i(ACTIVITY_NAME, "Return to StartActivity.onActivityResult");
+
+            protected void onActivityResult(int requestCode, int responseCode) {
+                if (requestCode == 50) {
+                    Log.i(ACTIVITY_NAME, "Return to StartActivity.onActivityResult");
+                }
+            }
+
+            @Override
+            protected void onResume() {
+                super.onResume();
+                Log.i(ACTIVITY_NAME, "In OnResume()");
+            }
+
+            @Override
+            protected void onStart() {
+                super.onStart();
+                Log.i(ACTIVITY_NAME, "In OnStart()");
+            }
+
+            @Override
+            protected void onPause() {
+                super.onPause();
+                Log.i(ACTIVITY_NAME, "In OnPause()");
+            }
+
+            @Override
+            protected void onStop() {
+                super.onStop();
+                Log.i(ACTIVITY_NAME, "In OnStop()");
+            }
+
+            @Override
+            protected void onDestroy() {
+                super.onDestroy();
+                Log.i(ACTIVITY_NAME, "In OnDestroy()");
+            }
         }
-    }
-    @Override
-    protected void onResume()
-    {
-        super.onResume();
-        Log.i(ACTIVITY_NAME,"In OnResume()");
-    }
-    @Override
-    protected void onStart(){
-        super.onStart();
-        Log.i(ACTIVITY_NAME,"In OnStart()");
-    }
-    @Override
-    protected void onPause(){
-        super.onPause();
-        Log.i(ACTIVITY_NAME,"In OnPause()");
-    }
-    @Override
-    protected void onStop(){
-        super.onStop();
-        Log.i(ACTIVITY_NAME,"In OnStop()");
-    }
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-        Log.i(ACTIVITY_NAME,"In OnDestroy()");
-    }
-}
