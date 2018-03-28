@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -31,6 +32,9 @@ public class ChatWindow extends Activity
     ContentValues cValues;
     Cursor cursor;
     ChatAdapter msgAdapter;
+
+    boolean frameCheck = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -46,6 +50,13 @@ public class ChatWindow extends Activity
         cValues = new ContentValues();
         msgAdapter = new ChatAdapter(this);
 
+        FrameLayout frameLayout = findViewById(R.id.frame1);
+
+        if ((frameLayout.isActivated()))
+        {
+            frameCheck=true;
+            Log.i(ACTIVITY_NAME,"Frame Layout loaded");
+        }
 
         cursor = db.query(false, chatdb.TABLE_NAME, new String[]{chatdb.KEY_ID, chatdb.KEY_MESSAGE},
                 null, null, null, null, null, null);
@@ -115,6 +126,12 @@ public class ChatWindow extends Activity
         {
             return position;
         }
+
+        /*public long getItemId(int position)
+        {
+           cursor.moveToPosition(chatdb.KEY_ID);
+
+        }*/
     }
 
 
