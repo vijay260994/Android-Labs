@@ -21,8 +21,6 @@ public class MessageFragment extends Fragment
     {
         View view = inflater.inflate(R.layout.activity_message_fragment,container,false);
 
-        //textMessage = (view.findViewsWithText(R.id.messages);
-
         return view;
     }
 
