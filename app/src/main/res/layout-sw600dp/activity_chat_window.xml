@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vijay.androidlabs.ChatWindow"
-    >
-<FrameLayout
-    android:id="@+id/frame1"
-    android:layout_width="250dp"
-    android:layout_height="850dp"
-    android:layout_alignRight="@id/btnSend">
-</FrameLayout>
+    tools:context="com.example.vijay.androidlabs.ChatWindow">
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/listView">
+    </FrameLayout>
 
     <ListView
         android:id="@+id/listView"
@@ -19,17 +19,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentEnd="false"
         android:layout_above="@id/btnSend"/>
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignLeft="@id/btnSend"
-        android:layout_alignRight="@id/listView"/>
+        android:layout_toLeftOf="@id/btnSend" />
 
     <Button
         android:id="@+id/btnSend"
@@ -37,7 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentEnd="false"
+        android:layout_toLeftOf="@+id/frame1"
         />
 
 </RelativeLayout>

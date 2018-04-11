@@ -1,12 +1,9 @@
 package com.example.vijay.androidlabs;
 
 import android.content.Context;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
-import java.sql.SQLClientInfoException;
 
 /**
  * Created by Vijay on 2018-03-07.

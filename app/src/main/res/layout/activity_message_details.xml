@@ -8,31 +8,5 @@
     android:layout_height="match_parent"
     tools:context="com.example.vijay.androidlabs.MessageDetails">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" android:orientation="vertical">
-
-
-        <TextView
-            android:text="Message Here"
-            android:id="@+id/message"
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
-
-        <TextView
-            android:id="@+id/message_id"
-            android:text="ID= "
-            android:layout_marginVertical="40dp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
-
-        <Button
-            android:id="@+id/btnDelete"
-            android:text="Delete This Message"
-            android:layout_marginVertical="290dp"
-            android:layout_width="200dp"
-            android:layout_height="60dp" />
-
-    </LinearLayout>
 
 </FrameLayout>
